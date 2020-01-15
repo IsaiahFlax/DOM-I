@@ -57,7 +57,7 @@ let newNavItems = Array.from(navItems).map(function(name, index) {
   const parentElement = document.querySelector('nav')
   parentElement.prepend(newElement)
 
-const newElement2 = document.createElement('nav')
+const newElement2 = document.createElement('a')
 newElement2.textContent = "appended Child"
 newElement2.style.color = "green"
 const parentElement2 = document.querySelector('nav')
@@ -68,6 +68,8 @@ parentElement2.appendChild(newElement2)
 
 const domIsAwesome = document.querySelector('.cta-text > h1')
 domIsAwesome.textContent = siteContent["cta"]["h1"]
+
+
 
 let ctaImg = document.getElementById("cta-img")
 ctaImg.setAttribute('src', siteContent["cta"]["img-src"])
@@ -113,3 +115,11 @@ contactSectionPTags[2].textContent = siteContent["contact"]["email"]
 
 const footerSection = document.querySelectorAll('footer > p')
 footerSection[0].textContent = siteContent["footer"]["copyright"]
+
+let test = document.getElementsByTagName("DIV")
+//console.log("test", test)
+test[5].style.backgroundColor = "red"
+
+let headerChange = document.getElementsByTagName("HEADER")
+console.log("test", headerChange)
+headerChange[0].style.borderBottom = "10px solid green"
