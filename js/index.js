@@ -76,3 +76,27 @@ let ctaButton = document.querySelector('.cta-text > button')
 ctaButton.textContent = siteContent["cta"]["button"]
 //ctaButton.textContent = siteContent["cta"]["button"]
 
+// const headers = document.querySelectorAll('.text-content > h4')
+// let newHeaders = Array.from(headers).map(function(name, index) {
+//   //console.log('test', siteContent.nav.index.name.key)
+//  // console.log(`nav-item-${Number([index]) + 1}`) 
+//  headers[index].textContent = (siteContent["main-content"])
+// })
+// console.log(newHeaders)
+
+const h4Tags = document.querySelectorAll('.text-content > h4')
+console.log(h4Tags)
+h4Tags[0].textContent = siteContent["main-content"]["features-h4"]
+h4Tags[1].textContent = siteContent["main-content"]["about-h4"]
+h4Tags[2].textContent = siteContent["main-content"]["services-h4"]
+h4Tags[3].textContent = siteContent["main-content"]["product-h4"]
+h4Tags[4].textContent = siteContent["main-content"]["vision-h4"]
+// const featuresp = document.querySelector()
+// const abouth1 = document.querySelector()
+// const aboutp = document.querySelector()
+// const servicesh1 = document.querySelector()
+// const servicesp = document.querySelector()
+// const producth1 = document.querySelector()
+// const productp = document.querySelector()
+// const visionh1 = document.querySelector()
+// const visionp = document.querySelector()
