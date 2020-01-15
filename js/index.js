@@ -98,3 +98,6 @@ pTags[1].textContent = siteContent["main-content"]["about-content"]
 pTags[2].textContent = siteContent["main-content"]["services-content"]
 pTags[3].textContent = siteContent["main-content"]["product-content"]
 pTags[4].textContent = siteContent["main-content"]["vision-content"]
+
+let middleImg = document.getElementById("middle-img")
+middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
