@@ -50,7 +50,18 @@ let newNavItems = Array.from(navItems).map(function(name, index) {
       navItems[index].textContent = (siteContent["nav"][`nav-item-${Number([index]) + 1}`])
       navItems[index].style.color = "green"
   })
-    
 
-  //console.log(newNavItems)
-  //console.log(siteContent["nav"]["nav-item-1"])
+  const newElement = document.createElement('a')
+  newElement.textContent = "prepended element"  
+  newElement.style.color = "green"
+  const parentElement = document.querySelector('nav')
+  parentElement.prepend(newElement)
+
+const newElement2 = document.createElement('nav')
+newElement2.textContent = "appended Child"
+newElement2.style.color = "green"
+const parentElement2 = document.querySelector('nav')
+parentElement2.appendChild(newElement2)
+ 
+
+console.log('nav', siteContent.nav)
