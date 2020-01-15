@@ -47,7 +47,10 @@ console.log(navItems)
 let newNavItems = Array.from(navItems).map(function(name, index) {
   //console.log('test', siteContent.nav.index.name.key)
  // console.log(`nav-item-${Number([index]) + 1}`)
-      return navItems[index].textContent = (siteContent["nav"][`nav-item-${Number([index]) + 1}`])
+      navItems[index].textContent = (siteContent["nav"][`nav-item-${Number([index]) + 1}`])
+      navItems[index].style.color = "green"
   })
-  console.log(newNavItems)
+    
+
+  //console.log(newNavItems)
   //console.log(siteContent["nav"]["nav-item-1"])
