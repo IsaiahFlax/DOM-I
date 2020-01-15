@@ -111,7 +111,5 @@ contactSectionPTags[0].textContent = siteContent["contact"]["address"]
 contactSectionPTags[1].textContent = siteContent["contact"]["phone"]
 contactSectionPTags[2].textContent = siteContent["contact"]["email"]
 
-// var i;
-// for (i = 0; i < c.length; i++) {
-//   c[i].style.backgroundColor = "red";
-// }
+const footerSection = document.querySelectorAll('footer > p')
+footerSection[0].textContent = siteContent["footer"]["copyright"]
