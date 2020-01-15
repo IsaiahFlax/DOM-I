@@ -85,7 +85,7 @@ ctaButton.textContent = siteContent["cta"]["button"]
 // console.log(newHeaders)
 
 const h4Tags = document.querySelectorAll('.text-content > h4')
-console.log(h4Tags)
+//console.log(h4Tags)
 h4Tags[0].textContent = siteContent["main-content"]["features-h4"]
 h4Tags[1].textContent = siteContent["main-content"]["about-h4"]
 h4Tags[2].textContent = siteContent["main-content"]["services-h4"]
@@ -101,3 +101,17 @@ pTags[4].textContent = siteContent["main-content"]["vision-content"]
 
 let middleImg = document.getElementById("middle-img")
 middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+const contactSection = document.querySelectorAll('.contact > h4')
+//console.log("test", contactSection)
+contactSection[0].textContent = siteContent["contact"]["contact-h4"]
+
+const contactSectionPTags = document.querySelectorAll('.contact > p')
+contactSectionPTags[0].textContent = siteContent["contact"]["address"]
+contactSectionPTags[1].textContent = siteContent["contact"]["phone"]
+contactSectionPTags[2].textContent = siteContent["contact"]["email"]
+
+// var i;
+// for (i = 0; i < c.length; i++) {
+//   c[i].style.backgroundColor = "red";
+// }
