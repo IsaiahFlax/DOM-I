@@ -45,6 +45,9 @@ const navItems = document.querySelectorAll('a')
 //navItems.textContent = siteContent["nav"]
 console.log(navItems)
 let newNavItems = Array.from(navItems).map(function(name, index) {
-      return navItems[index].textContent = [index]
+  //console.log('test', siteContent.nav.index.name.key)
+ // console.log(`nav-item-${Number([index]) + 1}`)
+      return navItems[index].textContent = (siteContent["nav"][`nav-item-${Number([index]) + 1}`])
   })
   console.log(newNavItems)
+  //console.log(siteContent["nav"]["nav-item-1"])
