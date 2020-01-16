@@ -37,6 +37,13 @@ const siteContent = {
   },
 };
 
+
+
+//make an array
+// let arrSiteContent = (Object.entries(siteContent))
+// let mainContent = (Object.entries(arrSiteContent[2][1]))
+// console.log("test1", (mainContent))
+
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img")
 logo.setAttribute('src', siteContent["nav"]["img-src"])
@@ -116,10 +123,14 @@ contactSectionPTags[2].textContent = siteContent["contact"]["email"]
 const footerSection = document.querySelectorAll('footer > p')
 footerSection[0].textContent = siteContent["footer"]["copyright"]
 
-let test = document.getElementsByTagName("DIV")
+let divSix = document.getElementsByTagName("DIV")
 //console.log("test", test)
-test[5].style.backgroundColor = "red"
+divSix[5].style.backgroundColor = "green"
 
 let headerChange = document.getElementsByTagName("HEADER")
 console.log("test", headerChange)
 headerChange[0].style.borderBottom = "10px solid green"
+headerChange[0].style.backgroundColor = "white"
+
+let container = document.querySelector(".container")
+container.style.backgroundImage = 'linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(78, 255, 0, 0.01) 1%, rgb(4, 95, 0) 100%)'
