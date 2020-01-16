@@ -83,6 +83,12 @@ ctaImg.setAttribute('src', siteContent["cta"]["img-src"])
 
 let ctaButton = document.querySelector('.cta-text > button')
 ctaButton.textContent = siteContent["cta"]["button"]
+ctaButton.addEventListener('click', (event) => { 
+  event.target.style.backgroundColor = 'blue';
+  domIsAwesome.textContent = "Isaiah is getting there";
+ })
+
+
 //ctaButton.textContent = siteContent["cta"]["button"]
 
 // const headers = document.querySelectorAll('.text-content > h4')
@@ -134,3 +140,4 @@ headerChange[0].style.backgroundColor = "white"
 
 let container = document.querySelector(".container")
 container.style.backgroundImage = 'linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(78, 255, 0, 0.01) 1%, rgb(4, 95, 0) 100%)'
+
